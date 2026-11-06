@@ -15,6 +15,20 @@ add_executable(authorization
     src/PasswordHasher.cpp
     src/WebServer.cpp
 )
+
 target_include_directories(authorization PRIVATE include)
-target_link_libraries(authorization PRIVATE SQLite::SQLite3 OpenSSL::Crypto)
-target_compile_options(authorization PRIVATE -Wall -Wextra -Wpedantic)
+
+target_link_libraries(authorization PRIVATE
+    SQLite::SQLite3
+    OpenSSL::Crypto
+)
+
+if(WIN32)
+    target_link_libraries(authorization PRIVATE ws2_32)
+endif()
+
+if(MSVC)
+    target_compile_options(authorization PRIVATE /W4 /permissive-)
+else()
+    target_compile_options(authorization PRIVATE -Wall -Wextra -Wpedantic)
+endif()
