@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-12T10:30:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="registration" name="А.1 Регистрация пользователя">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="r0" value="Начало" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="25" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1" value="Получение логина и пароля" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="440" y="115" width="250" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2" value="Проверка корректности логина и пароля" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="225" width="290" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3" value="Данные корректны?" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="465" y="345" width="200" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4" value="Формирование хеша пароля с солью" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="500" width="270" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5" value="Сохранение логина и хеша в базе данных" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="610" width="270" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6" value="Сообщение об ошибке" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="r7" value="Регистрация завершена успешно" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="430" y="715" width="270" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="r8" value="Конец" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="790" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="re0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r0" target="r1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r1" target="r2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r2" target="r3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re3" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="r3" target="r4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re4" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="r3" target="r6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r4" target="r5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r5" target="r7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="re7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="r7" target="r8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="login" name="А.2 Авторизация пользователя">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="l0" value="Начало" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="25" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="l1" value="Получение логина и пароля" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="440" y="115" width="250" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l2" value="Поиск пользователя по логину" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="225" width="250" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l3" value="Пользователь найден?" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="465" y="340" width="200" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="l4" value="Получение сохранённого хеша пароля" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="495" width="270" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l5" value="Проверка пароля по сохранённому хешу" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="600" width="270" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l6" value="Пароль верный?" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="465" y="705" width="200" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="l7" value="Отказ в авторизации" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="65" y="365" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l8" value="Отказ в авторизации" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="65" y="700" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l9" value="Успешная авторизация" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="810" y="715" width="230" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="l10" value="Конец" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="835" width="180" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="le0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l0" target="l1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l1" target="l2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l2" target="l3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le3" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="l3" target="l4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le4" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="l3" target="l7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l4" target="l5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l5" target="l6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le7" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="l6" target="l9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le8" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="l6" target="l8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l9" target="l10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l7" target="l10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="le11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="l8" target="l10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="password-hash" name="А.3 Формирование и проверка хеша">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="h0" value="Начало" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="25" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="h1" value="Получение пароля" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="455" y="110" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="h2" value="Генерация случайной соли" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="435" y="210" width="260" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="h3" value="Вычисление PBKDF2-HMAC-SHA256" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="315" width="290" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="h4" value="Формирование строки: алгоритм, число итераций, соль, хеш" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="425" width="350" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="h5" value="Сохранение строки хеша в базе данных" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="420" y="555" width="290" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="h6" value="Получение введённого пароля и сохранённой строки хеша" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="375" y="660" width="380" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="h7" value="Повторное вычисление хеша с сохранёнными параметрами" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="770" width="350" height="75" as="geometry"/>
+        </mxCell>
+        <mxCell id="h8" value="Хеши совпадают?" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="465" y="885" width="200" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="h9" value="Пароль подтверждён" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="800" y="900" width="230" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="h10" value="Пароль отклонён" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;shape=parallelogram;perimeter=parallelogramPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="75" y="900" width="230" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="he0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h0" target="h1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h1" target="h2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h2" target="h3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h3" target="h4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h4" target="h5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h5" target="h6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h6" target="h7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="h7" target="h8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he8" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h8" target="h9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="he9" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h8" target="h10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="http-request" name="А.4 Обработка HTTP-запроса">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="w0" value="Начало" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="475" y="25" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="w1" value="Ожидание и приём HTTP-соединения" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="115" width="280" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w2" value="Чтение и разбор HTTP-запроса" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="280" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w3" value="Определение метода и маршрута" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="325" width="280" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w4" value="Маршрут поддерживается?" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rhombus;perimeter=rhombusPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="465" y="435" width="210" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="w5" value="Формирование ответа с ошибкой" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="455" width="250" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w6" value="Вызов соответствующей операции AuthModule" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="600" width="300" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="w7" value="Формирование HTTP-ответа" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="435" y="715" width="270" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w8" value="Отправка ответа и закрытие соединения" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="820" width="300" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="w9" value="Конец обработки запроса" style="whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;fontFamily=Arial;fontSize=14;strokeWidth=1.5;rounded=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="455" y="930" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="we0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w0" target="w1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w1" target="w2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w2" target="w3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w3" target="w4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we4" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="w4" target="w6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we5" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="w4" target="w5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w5" target="w7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w6" target="w7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w7" target="w8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="we9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;strokeWidth=1.5;endArrow=block;endFill=1;fontColor=#000000;fontFamily=Arial;fontSize=12;" edge="1" parent="1" source="w8" target="w9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
